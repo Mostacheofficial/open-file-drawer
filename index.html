@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open File Drawer — Chemistry reports on what didn't work</title>
+  <meta name="description" content="An open archive of well-designed chemistry projects that did not give the expected result — citable, structured, and clearly labelled by review status.">
+  <link rel="canonical" href="https://openfiledrawer.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Open File Drawer">
+  <meta property="og:title" content="Open File Drawer — Chemistry reports on what didn't work">
+  <meta property="og:description" content="An open archive of well-designed chemistry projects that did not give the expected result — citable, structured, and clearly labelled by review status.">
+  <meta property="og:url" content="https://openfiledrawer.com/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f4e5f'/%3E%3Cg fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.5 19V8a1.5 1.5 0 0 1 1.5-1.5h5.8l3.7 3.7V19'/%3E%3Cpath d='M17.8 6.5v3.7h3.7'/%3E%3Crect x='6.5' y='17.5' width='19' height='8.5' rx='2' fill='%231f4e5f'/%3E%3Cpath d='M13.5 22h5'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div id="proto-banner" class="proto-banner" hidden></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#/" aria-label="Open File Drawer home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7"/><g class="glyph" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 19V8a1.5 1.5 0 0 1 1.5-1.5h5.8l3.7 3.7V19"/><path d="M17.8 6.5v3.7h3.7"/><rect x="6.5" y="17.5" width="19" height="8.5" rx="2"/><path d="M13.5 22h5"/></g></svg>
+        <span class="brand-name">Open File Drawer</span><span class="pill">pilot</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main"></nav>
+      <div id="nav-auth" class="nav-auth"></div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <strong>Open File Drawer</strong>
+          <p>Chemistry projects that did not work, documented so others don't have to repeat them.</p>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <a href="#/archive">Archive</a>
+          <a href="#/registry" data-feature="registry">Registry</a>
+          <a href="#/wanted" data-feature="wanted">Wanted</a>
+          <a href="#/submit">Submit a report</a>
+        </div>
+        <div data-feature="products">
+          <h4>Products</h4>
+          <a href="#/products">Overview</a>
+          <a href="#/data">Data</a>
+          <a href="#/enterprise">Enterprise</a>
+          <a href="#/workspace">Workspace sign-in</a>
+        </div>
+        <div>
+          <h4>Community</h4>
+          <a href="#/authors">Author guide</a>
+          <a href="#/pilot">Pilot programme</a>
+          <a href="#/reviewers">Editorial board &amp; reviewers</a>
+        </div>
+        <div>
+          <h4>About</h4>
+          <a href="#/about">Mission &amp; review labels</a>
+          <a href="#/policies">Policies</a>
+          <a href="#/imprint">Imprint</a>
+          <a href="#/privacy">Privacy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Prototype · sample entries are fictional</span>
+        <button type="button" id="reset-demo" class="linklike">Reset demo data</button>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/config.js"></script>
+  <script>
+    // supabase-js is only needed for backend "supabase" (loaded synchronously so the order below stays intact)
+    (function () {
+      var c = window.NR_CONFIG, j = c && c.supabaseJs;
+      if (c && c.backend === 'supabase' && j && j.url) document.write('<script src="' + j.url + '"' + (j.integrity ? ' integrity="' + j.integrity + '" crossorigin="anonymous"' : '') + '><\/script>');
+    })();
+  </script>
+  <script src="js/auth.js"></script>
+  <script src="js/seed.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/backend-supabase.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/api-local.js"></script>
+  <script src="js/tools.js"></script>
+  <script src="js/v-review.js"></script>
+  <script src="js/v-home.js"></script>
+  <script src="js/v-report.js"></script>
+  <script src="js/v-account.js"></script>
+  <script src="js/v-submit.js"></script>
+  <script src="js/v-registry.js"></script>
+  <script src="js/v-wanted.js"></script>
+  <script src="js/v-join.js"></script>
+  <script src="js/v-products.js"></script>
+  <script src="js/v-workspace.js"></script>
+  <script src="js/v-desk.js"></script>
+  <script src="js/v-pages.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
